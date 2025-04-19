@@ -25,7 +25,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://doc2excel.netlify.app/"],
+    allow_origins=["https://doc2excel.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
