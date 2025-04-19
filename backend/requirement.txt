@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pandas
+pdfplumber
+openpyxl
+python-multipart
+aiofiles
+PyMuPDF
+PyPDF2
+together
+dotenv
+sqlalchemy
+pydantic
+psycopg2-binary
