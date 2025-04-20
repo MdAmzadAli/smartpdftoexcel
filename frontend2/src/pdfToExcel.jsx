@@ -9,7 +9,7 @@ const PdfToExcelPage = () => {
   const [dragActive, setDragActive] = useState(false);
   const [downloadUrl, setDownloadUrl] = useState(null);
   const [conversionDone, setConversionDone] = useState(false);
-  const [showFeedbackModal, setShowFeedbackModal] = useState(true);
+  const [showFeedbackModal, setShowFeedbackModal] = useState(false);
   const fileInputRef = useRef();
   const handleFileChange = (e) => {
     const file = e.target.files[0];
