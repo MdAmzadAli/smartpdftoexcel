@@ -103,7 +103,7 @@ const PdfToExcelPage = () => {
 
       {/* Main */}
       <main className="flex flex-col items-center justify-center px-4 py-20 text-center">
-        <h1 className="text-4xl font-bold mb-4">Convert PDF to EXCEL</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4">Convert PDF to EXCEL</h1>
         <p className="text-lg mb-2">Convert PDF Data to EXCEL Spreadsheets.</p>
         {/* <p className="text-sm text-gray-600">
           Powered by <span className="text-red-500 font-medium">Solid Documents</span>.

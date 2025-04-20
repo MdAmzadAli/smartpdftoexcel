@@ -39,7 +39,10 @@ finally{
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
+    <div     className={`fixed right-4 z-50 bg-white shadow-lg rounded-lg p-4 w-80 transform transition-all duration-500 ${
+      show ? 'bottom-4 opacity-100' : '-bottom-96 opacity-0'
+    }`}
+    >
       <div className="relative bg-white p-6 rounded-2xl w-full max-w-md shadow-2xl border border-gray-200">
         {/* Cross Button */}
         <button
