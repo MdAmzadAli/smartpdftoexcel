@@ -28,7 +28,7 @@ export default function FeedbackModal({ show, onClose }) {
 }
 catch{
     
-    alert("Something went wrong! Please try again.");
+    alert("Something went wrong! Please give the feedback later.");
   }
 finally{
     setIsLoading(false);

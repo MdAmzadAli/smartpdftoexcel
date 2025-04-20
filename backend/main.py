@@ -25,7 +25,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://doc2excel.netlify.app"],
+    allow_origins=["https://doc2excel.netlify.app","http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -89,7 +89,7 @@ def download_excel(filename: str):
 def feedback(feedback:Feedback,db:Session=Depends(get_db)):
     if feedback.rating<1 or feedback.rating>5:
         return HTTPException(status_code=400,detail="Rating must be between 1 and 5")
-    # print("rating",feedback.rating,"comment",feedback.comment)
+    print("rating",feedback.rating,"comment",feedback.comment)
     new_feedback=FeedbackModel(rating=feedback.rating,comment=feedback.comment)
     # print ("new feedback",new_feedback)
     db.add(new_feedback)
